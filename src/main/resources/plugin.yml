@@ -1,0 +1,6 @@
+name: Gemstones
+version: '${version}'
+main: com.dansplugins.gemstones.Gemstones
+api-version: '1.16'
+authors: ["Daniel McCoy Stephenson"]
+description: Precious stones as findable, tradeable goods
