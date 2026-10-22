@@ -10,18 +10,31 @@ This plugin was proposed from a Kingdom: First Era player request on 2026-09-04.
 
 ## Project Status
 
-**Pre-implementation.** No code yet. The scope of the first release is defined in [MVP.md](MVP.md).
+**Pre-implementation.** The repository holds a buildable, empty plugin skeleton; no gameplay features exist yet. The scope of the first release is defined in [MVP.md](MVP.md).
 
 ## Planned Features
 
-- A roster of named gemstone items
-- Gems as loot from mining, chests and mobs
-- Configurable rarity per gem
-- Prices that slot into a coin economy
+- A roster of named gemstone items — ruby, sapphire, pearl, hessonite, amber and onyx — each with its own lore line and rarity tier
+- Gems as drops from mining stone and as loot in generated structures
+- A configurable rate for every gem source
+- An operator command to give gems, for events and for seeding a market
+- One documented item-appearance strategy, shared with [Conquest-Recipes](https://github.com/Dans-Plugins/Conquest-Recipes)
+
+Gems have no crafting use and Gemstones sets no prices: pricing is left to [Merchants](https://github.com/Dans-Plugins/Merchants).
 
 ## Installation
 
-Not yet released. Once there is a build, installation will follow the usual DPC pattern: drop the jar in `plugins/` and restart. It will also be available through [Dan's Plugin Manager](https://github.com/Dans-Plugins/Dans-Plugin-Manager).
+Not yet released. Once released, installation will follow the usual DPC pattern: drop the jar in `plugins/` and restart. It will also be available through [Dan's Plugin Manager](https://github.com/Dans-Plugins/Dans-Plugin-Manager).
+
+### Building from source
+
+Requires JDK 21.
+
+```bash
+./gradlew clean build
+```
+
+The jar is written to `build/libs/`.
 
 ### Dependencies
 
@@ -45,7 +58,7 @@ Please fill out a bug report [here](https://github.com/Dans-Plugins/Gemstones/is
 
 ## Contributing
 
-This repository follows the standards in [dpc-conventions](https://github.com/Dans-Plugins/dpc-conventions). `CONTRIBUTING.md` arrives with the build tooling.
+This repository follows the standards in [dpc-conventions](https://github.com/Dans-Plugins/dpc-conventions).
 
 ## License
 
