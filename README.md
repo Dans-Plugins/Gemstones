@@ -26,6 +26,16 @@ Gems have no crafting use and Gemstones sets no prices: pricing is left to [Merc
 
 Not yet released. Once released, installation will follow the usual DPC pattern: drop the jar in `plugins/` and restart. It will also be available through [Dan's Plugin Manager](https://github.com/Dans-Plugins/Dans-Plugin-Manager).
 
+### Development builds
+
+Each merge to `main` that changes more than documentation is published as a rolling `dev` prerelease. It is unreleased, unreviewed code — at this stage an empty skeleton with no gameplay — and should not be run on a server without a backup. To opt in with Dan's Plugin Manager:
+
+```
+/dpm get gemstones --experimental
+```
+
+Return to published releases with `/dpm get gemstones --stable`.
+
 ### Building from source
 
 Requires JDK 21.
